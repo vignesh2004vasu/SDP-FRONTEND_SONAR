@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080";
+const API_URL = "http://34.228.136.252:7777";
 
 const axiosInstance = axios.create({
   baseURL: API_URL,
@@ -45,7 +45,6 @@ const authService = {
     });
     return response.data;
   },
-  
 };
 
 export { authService, axiosInstance };

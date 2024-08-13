@@ -19,7 +19,7 @@ const SupplierDash = () => {
     const fetchSuppliers = async () => {
       try {
         const response = await axios.get(
-          "https://in-telli-ventory.onrender.com/api/suppliers"
+          "http://34.228.136.252:7777/api/suppliers"
         );
         setSuppliers(response.data);
       } catch (error) {
