@@ -28,11 +28,10 @@ const Login = () => {
       console.log("Login successful, token received:", token);
 
       const decodedToken = jwtDecode(token);
-      
+
       setUser({
-        email: decodedToken.sub, 
+        email: decodedToken.sub,
         role: decodedToken.role,
-       
       });
 
       navigate("/dashboard");
@@ -55,7 +54,7 @@ const Login = () => {
             <Input
               id="email"
               type="email"
-              placeholder="email: neo@gmail.com"
+              placeholder="email: admin@gmail.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -65,7 +64,7 @@ const Login = () => {
             <Input
               id="password"
               type="password"
-              placeholder="pass: 1234"
+              placeholder="pass: Admin@123"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
