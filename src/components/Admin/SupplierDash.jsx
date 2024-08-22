@@ -19,7 +19,7 @@ const SupplierDash = () => {
     const fetchSuppliers = async () => {
       try {
         const response = await axios.get(
-          "http://34.228.136.252:7777/api/suppliers"
+          "http://3.224.189.178:7777/api/suppliers"
         );
         setSuppliers(response.data);
       } catch (error) {

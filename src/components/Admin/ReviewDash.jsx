@@ -18,9 +18,7 @@ const ReviewDash = () => {
   useEffect(() => {
     const fetchReviews = async () => {
       try {
-        const response = await axios.get(
-          "https://in-telli-ventory.onrender.com/api/reviews"
-        );
+        const response = await axios.get("https://3.224.189.178/api/reviews");
         setReviews(response.data);
       } catch (error) {
         setError("Failed to fetch products.");

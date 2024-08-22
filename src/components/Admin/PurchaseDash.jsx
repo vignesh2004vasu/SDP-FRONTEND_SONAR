@@ -19,7 +19,7 @@ const PurchaseDash = () => {
     const fetchPurchases = async () => {
       try {
         const response = await axios.get(
-          "https://in-telli-ventory.onrender.com/api/purchase-orders"
+          "https://3.224.189.178/api/purchase-orders"
         );
         setPurchases(response.data);
       } catch (error) {

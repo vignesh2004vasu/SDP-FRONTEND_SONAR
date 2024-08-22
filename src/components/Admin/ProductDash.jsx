@@ -19,9 +19,7 @@ const ProductDash = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get(
-          "https://in-telli-ventory.onrender.com/products"
-        );
+        const response = await axios.get("https://3.224.189.178/products");
         setProducts(response.data);
       } catch (error) {
         setError("Failed to fetch products.");
